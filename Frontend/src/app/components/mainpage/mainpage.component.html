@@ -1,0 +1,251 @@
+<!-- <head>
+  <link href="../../../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+</head> -->
+<body>
+  
+  <!-- ***** Preloader Start ***** -->
+  <!-- <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div> -->
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+             <a href="index.html" class="logo">
+              <img src="../../../assets/images/logo.png" alt="Chain App Dev">
+            </a> 
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav">
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#about" style="color: whitesmoke;">About</a></li>
+              <li class="scroll-to-section"><a href="#services"  style="color: whitesmoke;">Services</a></li>
+              <li class="scroll-to-section"><a href="#schedule" class="scnow" style="color: whitesmoke;">Schedule Now</a></li>
+              <li style="float: right;cursor: pointer;" class="scroll-to-section"><a (click)="check()"  style="color: whitesmoke;">Upload meds image</a></li>
+              <!-- <li style="float: right;" class="scroll-to-section"><a routerLink="/login"  style="color: whitesmoke;">Login/Signup</a></li> -->
+              <li style="float: right;" class="scroll-to-section"><a routerLink="/adminmain"  style="color: whitesmoke;">Admin</a></li>
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+  
+  <div id="modal" class="popupContainer" style="display:none;">
+    <div class="popupHeader">
+        <span class="header_title">Login</span>
+        <span class="modal_close"><i class="fa fa-times"></i></span>
+    </div>
+
+</div>
+
+  <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s" style="background-image: url(../../../assets/images/qweqwe.gif);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="row">
+            <div class="col-lg-6 align-self-center">
+              <div class="left-content show-up header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                <div class="row">
+                  <div class="col-lg-12" style="color:rgb(0, 0, 0);font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-size: 200px;">
+                    <h3 *ngIf="username" style="font-weight: bolder;padding-bottom: 20px;padding-left: 15%;">Welcome {{username}} !</h3>
+                    <h2 >Switch to MedCall</h2>
+                    <h5 style="font-weight: bolder;">Your Perfect reminder now at your fingertips</h5>
+                    
+                  </div>
+
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                <img src="../../../assets/images/slider-dec.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="about" class="about-us section">
+    <div class="">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="section-heading">
+            <h4>About <em>What We Do</em> &amp; Why</h4>
+            <img src="../../../assets/images/heading-line-dec.png" alt="">
+            <p>Medication nonadherence is something when patients don’t take their medications as prescribed , and it is unfortunately fairly common, especially among patients with chronic disease.<br>Setbacks that this may lead to</p>
+          </div>
+          <div class="row">
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Increased comorbid diseases</a></h4>
+
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Increases healthcare Expenses</a></h4>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Outspread among Family</a></h4>
+
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <div class="box-item">
+                <h4><a href="#">Uncertain Deaths</a></h4>
+
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <p>Medication nonadherence is widely recognized as a common and costly problem. Approximately 30% to 50% of US adults are not adherent to long-term medications leading to an estimated $100 billion in preventable costs annually.</p>
+           
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="../../../assets/images/doc.gif" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="services" class="services section">
+    <div class="container feat">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading  wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+            <h4>Amazing <em>Services &amp; Features</em> for you</h4>
+            <img src="../../../assets/images/heading-line-dec.png" alt="">
+            <p>If you are frustated because of the forgetfulness due a hectic lifestyle, please visit <a rel="nofollow" href="#" target="_blank">MedCall</a> One stop solution for your meds tracking .</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-3">
+          <div class="service-item first-service">
+            <div class="icon"></div>
+            <h4>Automated Calls</h4>
+            <p>A pre-schedule call set at your comfort to remind yo of your meds</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item  fourth-service">
+            <div class="icon"></div>
+            <h4>Whatsapp confirmation</h4>
+            <p>A five min delayed message , to keep a check on the intial call.</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item third-service">
+            <div class="icon"></div>
+            <h4>Hassle-free Appointments</h4>
+            <p>Now book appointments from the comfort of your couch.</p>
+          </div>
+        </div>
+        <div class="col-lg-3">
+          <div class="service-item second-service">
+            <div class="icon"></div>
+            <h4>Meds track system</h4>
+            <p>We track your meds daily and give credit points , whcih can be used to avail future discounts !!!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <div id="schedule" class="the-clients">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1"></div>
+        <div class="col-lg-6">
+            <img src="../../../assets/images/patient.gif" alt="">
+        </div>
+        <div class="col-lg-5">
+        <!-- <div class="col-lg-8 offset-lg-2"> -->
+          <div class="section-heading">
+            <h4>Check What <em>We Offer</em> to our Client</h4>
+            <img src="../../../assets/images/heading-line-dec.png" alt="">
+            <p>A simple form for your daily meds reminders, just schedule a reminder and we got you covered and a daily call from your buddies medcall to keep your meds on track.</p>
+            <p>To never loose a streak just hit the button.</p> <br>
+              <div class="gradient-button">
+              <a routerLink="/form">Schedule Reminder</a>
+              <br><br>
+              <p>A simple form for booking appointments, just fill in the details asked and appointment recipt will be downloaded.</p>
+              <p>To book hit the button.</p> <br>
+              <a href="https://med-call.herokuapp.com/appointment">Schedule Appointment</a>
+              <br><br>
+              <p>A reminder for your meds renewal so that you never miss a streak</p>
+              <p>To have your stocks filled hit the button.</p> <br>
+              <a routerLink="/medicinereminder">Schedule </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <footer id="newsletter" class="foot" style="background-image: url(../../../assets/images/qweqwe.gif);">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 offset-lg-2">
+          <div class="section-heading">
+            <h4 style="color: whitesmoke;">Join our mailing list to receive the news &amp; latest trends</h4>
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-3">
+          <form id="search" action="#" method="GET">
+            <div class="row">
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <input type="address" name="address" class="email" placeholder="Email Address..." autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6 col-sm-6">
+                <fieldset>
+                  <button type="button" class="main-button" onclick="alert('Subscribed Successfully !.')">Subscribe Now <i class="fa fa-angle-right"></i></button>
+                </fieldset>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="col-lg-12">
+          <div class="copyright-text">
+            <!-- <p>Copyright © 2022 ByteCoders - Optum Stratethon - Season 3</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>

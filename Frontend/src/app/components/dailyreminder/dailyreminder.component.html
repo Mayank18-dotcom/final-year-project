@@ -1,0 +1,44 @@
+<body class="bg-primary" style="padding-bottom: 60%;">
+    <div class="login-box bg-dark" >
+        <br><br>
+          <h4>Daily Meds Reminder</h4>
+          <form class="bg-dark">
+            <div class="user-box">
+              <input type="text" name="Name" [(ngModel)]="registerUserData.username" required>
+              <label>Name<span style="color: red;">*</span></label>
+            </div>
+            <div class="user-box">
+              <input type="text" name="Medicine" [(ngModel)]="registerUserData.meds"  required>
+              <label>Medicine<span style="color: red;">*</span></label>
+            </div>
+            <div class="user-box">
+                  <input type="text" name="Phno" [(ngModel)]="registerUserData.phno"  required>
+                  <label>Phone number<span style="color: red;">*</span></label>
+            </div>
+            
+            <h4>Schedule Time</h4>
+           <div class="user-box">
+              <input type="time" name="time1" [(ngModel)]="registerUserData.time1" >
+              <label style="color: whitesmoke;">Morning</label>
+            </div>
+               <div class="user-box">
+              <input type="time" name="time2" [(ngModel)]="registerUserData.time2" >
+              <label style="color: whitesmoke;">Afternoon</label>
+            </div>
+               <div class="user-box">
+              <input type="time" name="time3" [(ngModel)]="registerUserData.time3" >
+              <label style="color: whitesmoke;">Evening</label>
+            </div>
+            <!-- <input type="submit" class="btn" (click)="check()" value="Sign up" /> -->
+            <button type="submit">
+              <a style="color: whitesmoke;cursor: pointer;" (click)="check()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Submit
+              </a>
+            </button>
+          </form>
+        </div>
+</body>

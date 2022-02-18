@@ -1,0 +1,54 @@
+<body>
+	<!-- partial:index.partial.html -->
+	<div class="container">
+		<form action="" method="">
+		<h1>Medcall Panel
+			<small style="color: black;font-weight: bold;">Current Credit Score : {{sscore}}</small>
+		</h1>
+		
+		<div class='input-control'>
+			<input id='meds' type='text' class='input-control__input' placeholder='medicine name' [(ngModel)]="newimg.meds" name = "meds"/>
+			<label for='meds' class='input-control__label'>
+				Medicine
+			</label>
+		</div>
+		<div class="avatar-upload">
+			<div class="avatar-edit">
+				<!-- <input type='file' id="imageUpload" accept=".png, .jpg, .jpeg" /> -->
+				<input type="file" id="imageUpload" name="FUImage" style="width: 100px;font-size: 16px;" accept=".png, .jpg, .jpeg" (change)="handleFileInput($event.target.files)"> 
+				<label for="imageUpload"></label>
+			</div>
+			<div class="avatar-preview">
+				<div id="imagePreview">
+					<img src="{{ImageBaseData}}" height="180" width="180">
+				</div>
+			</div>
+		</div>
+	
+	
+	<div class="hero">
+		<div class="card-container">
+			<button href="#myModal" data-toggle="modal" type="button" class="btn btn-danger pull-left" style="margin-left: 10px;" (click)="editProficPic()">Upload</button> 
+		</div>
+	</div>
+	</form>
+	</div>
+	<div id="myModal" class="modal fade">
+		<div class="modal-dialog modal-confirm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<div class="icon-box">
+						<i class="material-icons">&#xE876;</i>
+					</div>				
+					<h4 class="modal-title w-100">Awesome!</h4>	
+				</div>
+				<div class="modal-body">
+					<p class="text-center">Good work taking your medicine today!! Keep it up!</p>
+				</div>
+				<div class="modal-footer">
+					<button class="btn btn-success btn-block" data-dismiss="modal" routerLink="/">OK</button>
+				</div>
+			</div>
+		</div>
+	</div> 
+</body>

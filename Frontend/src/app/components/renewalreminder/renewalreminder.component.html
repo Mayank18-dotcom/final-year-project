@@ -1,0 +1,37 @@
+<body class="bg-primary" style="padding-bottom: 60%;">
+    <div class="login-box bg-dark" >
+        <br><br>
+          <h4>Meds Renewal Reminder</h4>
+          <form class="bg-dark">
+            <div class="user-box">
+              <input type="text" name="Name" [(ngModel)]="registerUserData.username" required>
+              <label>Name<span style="color: red;">*</span></label>
+            </div>
+            <div class="user-box">
+                <input type="text" name="Phno" [(ngModel)]="registerUserData.phno"  required>
+                <label>Phone number<span style="color: red;">*</span></label>
+            </div>
+            <div class="user-box">
+              <input type="text" name="Medicine" [(ngModel)]="registerUserData.meds"  required>
+              <label>Medicine Name<span style="color: red;">*</span></label>
+            </div>
+            <div class="user-box">
+                <input type="date" name="date" [(ngModel)]="registerUserData.date" placeholder=" "  required>
+                <label>Reminder Date<span style="color: red;">*</span></label>
+            </div>
+           <div class="user-box">
+              <input type="time" name="time" [(ngModel)]="registerUserData.time" required>
+              <label style="color: whitesmoke;">Reminder Time</label>
+            </div>
+            <button type="submit">
+              <a style="color: whitesmoke;cursor: pointer;" (click)="check()">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  Submit
+              </a>
+            </button>
+          </form>
+        </div>
+</body>
