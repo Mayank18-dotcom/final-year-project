@@ -101,7 +101,7 @@ app.post('/calldaily',(req,res)=>{
     else{	
       if(t1){
         console.log("Call successfull scheduled at ",t1)
-        const time1 = '00 '+ t1.substring(3,5) + ' ' + t1.substring(0,2) + ' * * 1-5';
+        const time1 = '00 '+ t1.substring(3,5) + ' ' + t1.substring(0,2) + ' * * 0-6';
         schedule.scheduleJob(time1,()=>{
           client.calls.create({
             twiml: '<Response><Say>Hi '+ name + ' . This is a scheduled call from Medcall to remind you to take '+meds+' . Make sure you take it and upload the medicine image. Thank you.</Say></Response>',
@@ -131,7 +131,7 @@ app.post('/calldaily',(req,res)=>{
       }
       if(t2){
         console.log("Call successfull scheduled at ",t2)
-        const time2 = '00 '+ t2.substring(3,5) + ' ' + t2.substring(0,2) + ' * * 1-5';
+        const time2 = '00 '+ t2.substring(3,5) + ' ' + t2.substring(0,2) + ' * * 0-6';
         schedule.scheduleJob(time2,()=>{
           client.calls.create({
             twiml: '<Response><Say>Hi '+ name + ' . This is a scheduled call from Medcall to remind you to take '+meds+' . Make sure you take it and upload the medicine image. Thank you.</Say></Response>',
@@ -161,7 +161,7 @@ app.post('/calldaily',(req,res)=>{
       }
       if(t3){
         console.log("Call successfull scheduled at ",t3)
-        const time3 = '00 '+ t3.substring(3,5) + ' ' + t3.substring(0,2) + ' * * 1-5';
+        const time3 = '00 '+ t3.substring(3,5) + ' ' + t3.substring(0,2) + ' * * 0-6';
         schedule.scheduleJob(time3,()=>{
           client.calls.create({
             twiml: '<Response><Say>Hi '+ name + ' . This is a scheduled call from Medcall to remind you to take '+meds+' . Make sure you take it and upload the medicine image. Thank you.</Say></Response>',
